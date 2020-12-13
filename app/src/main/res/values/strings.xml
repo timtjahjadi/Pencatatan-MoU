@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PencatatanMoU_UC_Mobdev</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mou">MoU</string>
+    <string name="realisation">Realisation</string>
+    <string name="profile">Profile</string>
 </resources>
