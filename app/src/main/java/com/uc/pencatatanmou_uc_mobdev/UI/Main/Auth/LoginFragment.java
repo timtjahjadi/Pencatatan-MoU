@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.uc.pencatatanmou_uc_mobdev.R;
-import com.uc.pencatatanmou_uc_mobdev.UI.Splash.SplashFragmentDirections;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -23,7 +22,7 @@ import butterknife.ButterKnife;
 public class LoginFragment extends Fragment {
 
     //declare all components
-    @BindView(R.id.btnToMou)
+    @BindView(R.id.btn_login)
     Button button;
 
     public LoginFragment() {

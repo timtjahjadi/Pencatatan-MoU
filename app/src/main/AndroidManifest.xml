@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PencatatanMoU_UC_Mobdev">
+        <activity android:name=".Adapter.realAdapter"></activity>
+        <activity android:name=".Adapter.mouAdapter" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
