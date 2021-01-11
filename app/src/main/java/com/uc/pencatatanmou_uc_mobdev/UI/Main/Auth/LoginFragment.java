@@ -21,12 +21,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.uc.pencatatanmou_uc_mobdev.Model.Mou;
-import com.uc.pencatatanmou_uc_mobdev.Model.Real;
 import com.uc.pencatatanmou_uc_mobdev.Model.User;
 import com.uc.pencatatanmou_uc_mobdev.R;
-import com.uc.pencatatanmou_uc_mobdev.UI.Main.Mou.MouViewModel;
-import com.uc.pencatatanmou_uc_mobdev.UI.Main.Real.RealViewModel;
 
 import java.util.List;
 
@@ -80,7 +76,7 @@ public class LoginFragment extends Fragment {
         button.setOnClickListener(v -> {
             loginViewModel.getUserCollection().observe(requireActivity(), observeViewModel);
             if (pass) {
-                NavDirections action = LoginFragmentDirections.actionLoginFragmentToMouFragment();
+                NavDirections action = LoginFragmentDirections.actionLoginFragmentToNavMou();
                 Navigation.findNavController(view).navigate(action);
             }
         });
@@ -115,39 +111,10 @@ public class LoginFragment extends Fragment {
         }
     };
 
-//    private Observer<List<User>> observeViewModel = new Observer<List<User>>() {
-//        @Override
-//        public void onChanged(List<User> users) {
-//            email = txt_email.toString();
-//            password = txt_pass.toString();
-//            tulisan.setText("asdadadasd");
-//            pass = true;
-//
-////            if (users != null) {
-////                for (int i = 0; i < users.size(); i++) {
-////                    User Obj = users.get(i);
-////
-////                    if (Obj.getEmail().equals(email)) {
-////                        if (Obj.getPassword().equals(password)) {
-////                            pass = true;
-////                        }
-////                    } else {
-////                        pass = false;
-////                    }
-////                }
-////            }
-//        }
-//    };
-
     @Override
     public void onResume() {
         super.onResume();
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
     }
 
-//    @Override
-//    public void onStop() {
-//        super.onStop();
-//        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-//    }
 }

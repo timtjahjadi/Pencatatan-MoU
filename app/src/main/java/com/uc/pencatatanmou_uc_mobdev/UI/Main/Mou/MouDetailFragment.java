@@ -11,9 +11,8 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,11 +22,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.uc.pencatatanmou_uc_mobdev.Adapter.mouAdapter;
 import com.uc.pencatatanmou_uc_mobdev.Model.Mou;
 import com.uc.pencatatanmou_uc_mobdev.R;
-import com.uc.pencatatanmou_uc_mobdev.UI.Main.Profile.ProfileFragmentDirections;
 import com.uc.pencatatanmou_uc_mobdev.util.Constants;
 
 import butterknife.BindView;

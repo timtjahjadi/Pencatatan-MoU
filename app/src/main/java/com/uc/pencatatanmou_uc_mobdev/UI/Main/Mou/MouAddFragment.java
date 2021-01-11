@@ -267,9 +267,9 @@ public class MouAddFragment extends Fragment {
         @Override
         public void onChanged(Integer integer) {
             if (integer == 0) {
-                Toast.makeText(getActivity(), "Data Added successfully", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Data Added successfully", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getActivity(), "Data Cannot Be Added", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Data Cannot Be Added", Toast.LENGTH_SHORT).show();
             }
         }
     };

@@ -9,14 +9,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.uc.pencatatanmou_uc_mobdev.Model.Mou;
 import com.uc.pencatatanmou_uc_mobdev.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class mouAdapter extends RecyclerView.Adapter<mouAdapter.CardsViewHolder> {
@@ -48,8 +45,6 @@ public class mouAdapter extends RecyclerView.Adapter<mouAdapter.CardsViewHolder>
     public void onBindViewHolder(@NonNull final mouAdapter.CardsViewHolder holder, int position) {
         final Mou mou = getList_mou().get(position);
 
-        //THIS CODE IS TO LOAD THE IMAGE :))))
-//        Glide.with(context).load(Constants.BASE_IMG_URL+tv.getCover()).into(holder.cover);
         holder.name.setText(mou.getTitle());
         holder.date.setText(mou.getDate());
     }

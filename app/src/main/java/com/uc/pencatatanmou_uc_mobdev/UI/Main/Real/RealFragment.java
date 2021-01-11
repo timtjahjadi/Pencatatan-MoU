@@ -17,13 +17,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.uc.pencatatanmou_uc_mobdev.Adapter.mouAdapter;
 import com.uc.pencatatanmou_uc_mobdev.Adapter.realAdapter;
-import com.uc.pencatatanmou_uc_mobdev.Model.Mou;
 import com.uc.pencatatanmou_uc_mobdev.Model.Real;
 import com.uc.pencatatanmou_uc_mobdev.R;
-import com.uc.pencatatanmou_uc_mobdev.UI.Main.Mou.MouFragmentDirections;
-import com.uc.pencatatanmou_uc_mobdev.UI.Main.Mou.MouViewModel;
+
 import com.uc.pencatatanmou_uc_mobdev.util.ItemClickSupport;
 
 import java.util.List;

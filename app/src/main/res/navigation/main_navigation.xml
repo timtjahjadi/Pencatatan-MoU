@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.uc.pencatatanmou_uc_mobdev.UI.Splash.SplashFragment"
+        android:name="com.uc.pencatatanmou_uc_mobdev.UI.Main.Splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -22,7 +22,7 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_mouFragment"
+            android:id="@+id/action_loginFragment_to_nav_mou"
             app:destination="@id/nav_mou" />
     </fragment>
     <fragment
@@ -55,11 +55,11 @@
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
-            android:id="@+id/action_nav_profile_to_splashFragment"
-            app:destination="@id/splashFragment" />
-        <action
             android:id="@+id/action_nav_profile_to_profileEditFragment"
             app:destination="@id/profileEditFragment" />
+        <action
+            android:id="@+id/action_nav_profile_to_splashFragment"
+            app:destination="@id/splashFragment" />
     </fragment>
     <fragment
         android:id="@+id/mouAddFragment"

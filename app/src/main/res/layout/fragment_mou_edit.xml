@@ -43,7 +43,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Form of Agreement"
+        android:hint="Type of Company"
         app:layout_constraintEnd_toEndOf="@+id/txt_mou_edit_name"
         app:layout_constraintStart_toStartOf="@+id/txt_mou_edit_name"
         app:layout_constraintTop_toBottomOf="@+id/txt_mou_edit_name">
